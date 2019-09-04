@@ -17,7 +17,8 @@ mix
   .js('src/app.js', `${outputDir}/`)
   .sass('src/app.scss', `${outputDir}/`)
   .copy('src/**.html', `${outputDir}/`)
-  .copyDirectory('src/assets', `${outputDir}/assets`);
+  .copyDirectory('src/assets', `${outputDir}/assets`)
+  .sourceMaps();
 
 // Full API
 // mix.js(src, output);

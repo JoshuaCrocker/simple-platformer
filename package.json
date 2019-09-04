@@ -12,7 +12,8 @@
     "xo": "^0.24.0"
   },
   "xo": {
-    "space": true
+    "space": true,
+    "ignore": "docs/**"
   },
   "scripts": {
     "dev": "npm run development",
