@@ -1,3 +1,3 @@
-let name = "Joshua"
+const name = 'Joshua';
 
- console.log(`Hello ${name}`)
+console.log(`Hello ${name}`);
