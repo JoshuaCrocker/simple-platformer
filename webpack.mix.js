@@ -11,10 +11,13 @@ const mix = require('laravel-mix');
  |
  */
 
+const outputDir = 'docs';
+
 mix
-  .js('src/app.js', 'dist/')
-  .sass('src/app.scss', 'dist/')
-  .copy('src/**.html', 'dist/');
+  .js('src/app.js', `${outputDir}/`)
+  .sass('src/app.scss', `${outputDir}/`)
+  .copy('src/**.html', `${outputDir}/`)
+  .copyDirectory('src/assets', `${outputDir}/assets`);
 
 // Full API
 // mix.js(src, output);
