@@ -1,3 +1,23 @@
-const name = 'Joshua';
+const Phaser = require('phaser');
 
-console.log(`Hello ${name}`);
+const config = {
+  type: Phaser.AUTO,
+  width: 800,
+  height: 600,
+  scene: {
+    preload,
+    create,
+    update
+  }
+};
+
+const game = new Phaser.Game(config);
+
+function preload() {
+}
+
+function create() {
+}
+
+function update() {
+}
